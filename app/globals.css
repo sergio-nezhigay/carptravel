@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hero-img {
+  background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+    url(../public/images/hero-320.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(217, 217, 217, 1);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.corners-border {
+  width: 100%;
+  height: 53px;
+
+  background: linear-gradient(to right, #fff 2px, transparent 2px) 0 0,
+    linear-gradient(to right, #fff 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, #fff 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, #fff 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, #fff 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, #fff 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, #fff 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, #fff 2px, transparent 2px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 50px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
