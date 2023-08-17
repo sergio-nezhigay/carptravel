@@ -4,8 +4,8 @@ import Slogan from "./Slogan";
 
 export default function Hero() {
   return (
-    <>
-      <div className="flex flex-col justify-between h-screen mb12 hero-img pt-[105px] pb-[56px] px-5 text-white ">
+    <section className="py-14 h-screen hero-img">
+      <div className="container px-5 m-auto pt-[50px] flex flex-col justify-between h-full">
         <Slogan />
         <h1 className="text-4xl  uppercase">
           Uncover <br />
@@ -24,10 +24,8 @@ export default function Hero() {
           Carpathians. Enjoy stunning views, exciting expeditions, and the best
           service!
         </p>
-
         <button class="corners-border">JOIN NOW</button>
       </div>
-      <OtherSection />
-    </>
+    </section>
   );
 }

@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
+  color: #fff;
 }
 
 .hero-img {
@@ -19,7 +20,6 @@ html {
 .corners-border {
   width: 100%;
   height: 53px;
-
   background: linear-gradient(to right, #fff 2px, transparent 2px) 0 0,
     linear-gradient(to right, #fff 2px, transparent 2px) 0 100%,
     linear-gradient(to left, #fff 2px, transparent 2px) 100% 0,
@@ -28,8 +28,44 @@ html {
     linear-gradient(to bottom, #fff 2px, transparent 2px) 100% 0,
     linear-gradient(to top, #fff 2px, transparent 2px) 0 100%,
     linear-gradient(to top, #fff 2px, transparent 2px) 100% 100%;
-
   background-repeat: no-repeat;
   background-size: 50px 20px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gradient::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 287px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 24, 38, 1),
+    rgba(0, 37, 49, 0)
+  );
+}
+/* .gradient-small {
+  width: 100%;
+  height: 287px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 24, 38, 1),
+    rgba(0, 37, 49, 0)
+  );
+} */
+
+.gradient::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 15, 8, 0.5),
+    rgba(0, 37, 49, 0)
+  );
 }
