@@ -49,11 +49,58 @@
         url(/images/hero-bg-1280@2x.jpg) 2x
       );
   }
-
   .hero {
     @apply hero-bg-mob bg-cover bg-center md:hero-bg-tab xl:hero-bg-desk relative bg-[#D9D9D9];
   }
   .hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+    height: 100%;
+    opacity: 0.25;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 1) 0%,
+      rgba(0, 37, 49, 0) 44%
+    );
+  }
+
+  .about-bg-mob {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/about-bg-320.webp) type("image/webp") 1x,
+        url(/images/about-bg-320@2x.webp) type("image/webp") 2x,
+        url(/images/about-bg-320.jpg) 1x,
+        url(/images/about-bg-320@2x.jpg) 2x
+      );
+  }
+  .about-bg-tab {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/about-bg-768.webp) type("image/webp") 1x,
+        url(/images/about-bg-768@2x.webp) type("image/webp") 2x,
+        url(/images/about-bg-768.jpg) 1x,
+        url(/images/about-bg-768@2x.jpg) 2x
+      );
+  }
+  .about-bg-desk {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/about-bg-1280.webp) type("image/webp") 1x,
+        url(/images/about-bg-1280@2x.webp) type("image/webp") 2x,
+        url(/images/about-bg-1280.jpg) 1x,
+        url(/images/about-bg-1280@2x.jpg) 2x
+      );
+  }
+
+  .about {
+    @apply about-bg-mob bg-cover bg-center md:about-bg-tab xl:about-bg-desk relative bg-[#D9D9D9];
+  }
+  .about::after {
     content: "";
     position: absolute;
     left: 0;
@@ -93,15 +140,15 @@
   background-image: linear-gradient(rgba(0, 36, 38, 0.5), rgba(0, 37, 49, 0));
 }
 
-.hero-img {
+/* .about-img {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url(../public/images/hero-320.jpg);
+    url(../public/images/about-320.jpg);
 }
 
 .about-img {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
     url(../public/images/happy-couple-320.jpg);
-}
+} */
 
 .about-img::before {
   top: 50%;

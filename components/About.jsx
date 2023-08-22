@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen about-img bg-img text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen about about-img1 bg-img1 text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
     >
       <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col justify-between md:grid h-full md:auto-rows-auto md:gap-x-[24px] md:grid-cols-[auto,220px] xl:grid-cols-[50%,50%]  ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase mb-2 md:col-start-1 md:row-start-1 md:self-start">
