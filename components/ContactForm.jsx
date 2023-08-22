@@ -17,7 +17,7 @@ export default function ContactForm() {
   });
 
   const onSubmit = async (data) => {
-    const formSpreeEndpoint = process.env.REACT_APP_FORMSPREE_ENDPOINT;
+    const formSpreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
     try {
       const response = await fetch(formSpreeEndpoint, {
         method: "POST",
