@@ -2,7 +2,9 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
-import OtherSection from "@/components/OtherSection";
+import Contacts from "@/components/Contacts";
+import Gallery from "@/components/Gallery";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      {/* <OtherSection /> */}
+      {/* <Services /> */}
+      <Gallery />
+      <Contacts />
     </>
   );
 }

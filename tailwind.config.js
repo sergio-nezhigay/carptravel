@@ -12,9 +12,18 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        error: "#FF5757",
+      },
+      backgroundColor: {
+        "custom-green": "rgba(1, 10, 5, 0.75)",
+      },
+      boxShadow: {
+        "3xl": "0 0 0 15px rgba(0, 0, 0, 0.25)",
+      },
     },
     fontSize: {
-      // sm: "0.875rem",
+      xs: "0.75rem",
       sm: [
         "0.875rem",
         {
@@ -22,6 +31,7 @@ module.exports = {
         },
       ],
       base: "1rem",
+      lg: "1.125rem",
       xl: "1.25rem",
       "2xl": [
         "1.5rem",
@@ -56,7 +66,12 @@ module.exports = {
       wide: ".025em",
       wider: ".045em",
       widest: ".1em",
-      widest: ".25em",
+    },
+    screens: {
+      sm: "320px",
+      md: "768px",
+
+      xl: "1280px",
     },
   },
   plugins: [],

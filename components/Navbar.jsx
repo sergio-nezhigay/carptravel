@@ -1,93 +1,95 @@
-import Link from "next/link";
-import React from "react";
-import { useState } from "react";
+import { useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
-function Navbar() {
+export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = navbar ? "hidden" : "visible";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, [navbar]);
+
   return (
-    <div>
-      <nav className="w-full  absolute top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 mx-auto lg:max-w-7x1 md:items-center md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Link href="/">
-                <Image
-                  src="./images/logo.svg"
-                  alt="Logo"
-                  width={61}
-                  height={33}
-                />
-              </Link>
-              {/* button for mobile */}
-              <div className="md:hidden ">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? <span>MENU</span> : <span>CLOSE</span>}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "p-12 md:p-0 block" : "hidden"
-              }`}
-            >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
-                    About
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#services" onClick={() => setNavbar(!navbar)}>
-                    Services
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#career" onClick={() => setNavbar(!navbar)}>
-                    Career
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#gallery" onClick={() => setNavbar(!navbar)}>
-                    Gallery
-                  </Link>
-                </li>
-              </ul>
+    <nav className="w-full relative  shadow">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 w-full container justify-between px-5 md:mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className=" flex items-center justify-between py-9 md:py-6 md:block">
+            <a href="#" className={navbar ? "invisible" : ""}>
+              <Image src="/images/logo.svg" width={61} height={33} alt="Logo" />
+            </a>
+            <div className="md:hidden">
+              <button
+                className=" outline-none text-sm tracking-widest "
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? <span>CLOSE</span> : <span>OPEN</span>}
+              </button>
             </div>
           </div>
         </div>
-      </nav>
-
-      {/* <div>
-        <Link href="/">
-          <h1>CarpTravel</h1>
-        </Link>
-
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/career">Career</Link>
-          </li>
-          <li>
-            <Link href="/#gallery">Gallery</Link>
-          </li>
-        </ul>
-      </div> */}
-    </div>
+        <div>
+          <div
+            className={` flex-1 justify-self-center mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            } md:flex`}
+          >
+            {/* Desktop Menu */}
+            <ul className=" hidden md:flex text-sm leading-[17px] tracking-widest items-center justify-center space-y-8 md:space-x-6 xl:space-x-14  md:space-y-0">
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/#gallery">Gallery</Link>
+              </li>
+              <li>
+                <Link href="/#services">Services</Link>
+              </li>
+              <li>
+                <Link href="/#about">About</Link>
+              </li>
+              <li>
+                <Link href="/#contacts">Contacts</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* Mobile Menu */}
+      <ul
+        className={`absolute flex flex-col justify-center items-center h-screen w-screen left-0 top-0  z-20 bg-custom-green ${
+          navbar ? "block" : "hidden"
+        } md:hidden`}
+      >
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <Link href="/" onClick={() => setNavbar(false)}>
+            Home
+          </Link>
+        </li>
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <Link href="#gallery" onClick={() => setNavbar(false)}>
+            Gallery
+          </Link>
+        </li>
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <Link href="#services" onClick={() => setNavbar(false)}>
+            Services
+          </Link>
+        </li>
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <Link href="#about" onClick={() => setNavbar(false)}>
+            About
+          </Link>
+        </li>
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <Link href="#contacts" onClick={() => setNavbar(false)}>
+            Contacts
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
-
-export default Navbar;
