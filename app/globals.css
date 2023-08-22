@@ -116,6 +116,103 @@
       rgba(0, 37, 49, 0) 44%
     );
   }
+
+  .gallery-bg-mob {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/gallery-bg-320.webp) type("image/webp") 1x,
+        url(/images/gallery-bg-320@2x.webp) type("image/webp") 2x,
+        url(/images/gallery-bg-320.jpg) 1x,
+        url(/images/gallery-bg-320@2x.jpg) 2x
+      );
+  }
+  .gallery-bg-tab {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/gallery-bg-768.webp) type("image/webp") 1x,
+        url(/images/gallery-bg-768@2x.webp) type("image/webp") 2x,
+        url(/images/gallery-bg-768.jpg) 1x,
+        url(/images/gallery-bg-768@2x.jpg) 2x
+      );
+  }
+  .gallery-bg-desk {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/gallery-bg-1280.webp) type("image/webp") 1x,
+        url(/images/gallery-bg-1280@2x.webp) type("image/webp") 2x,
+        url(/images/gallery-bg-1280.jpg) 1x,
+        url(/images/gallery-bg-1280@2x.jpg) 2x
+      );
+  }
+
+  .gallery {
+    @apply gallery-bg-mob bg-cover bg-center md:gallery-bg-tab xl:gallery-bg-desk relative bg-[#D9D9D9];
+  }
+  .gallery::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+    height: 100%;
+    opacity: 0.25;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 1) 0%,
+      rgba(0, 37, 49, 0) 44%
+    );
+  }
+
+  /* == */
+  .contacts-bg-mob {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/contacts-bg-320.webp) type("image/webp") 1x,
+        url(/images/contacts-bg-320@2x.webp) type("image/webp") 2x,
+        url(/images/contacts-bg-320.jpg) 1x,
+        url(/images/contacts-bg-320@2x.jpg) 2x
+      );
+  }
+  .contacts-bg-tab {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/contacts-bg-768.webp) type("image/webp") 1x,
+        url(/images/contacts-bg-768@2x.webp) type("image/webp") 2x,
+        url(/images/contacts-bg-768.jpg) 1x,
+        url(/images/contacts-bg-768@2x.jpg) 2x
+      );
+  }
+  .contacts-bg-desk {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      image-set(
+        url(/images/contacts-bg-1280.webp) type("image/webp") 1x,
+        url(/images/contacts-bg-1280@2x.webp) type("image/webp") 2x,
+        url(/images/contacts-bg-1280.jpg) 1x,
+        url(/images/contacts-bg-1280@2x.jpg) 2x
+      );
+  }
+
+  .contacts {
+    @apply contacts-bg-mob bg-cover bg-center md:contacts-bg-tab xl:contacts-bg-desk relative bg-[#D9D9D9];
+  }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+    height: 100%;
+    opacity: 0.25;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 1) 0%,
+      rgba(0, 37, 49, 0) 44%
+    );
+  }
 }
 
 .bg-img {

@@ -15,7 +15,7 @@ function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen gallery-img bg-img text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen gallery gallery-img1 bg-img1 text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
     >
       <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase  md:col-start-1 md:row-start-1 md:self-start mb-6 md:mb-[75px] xl:mb-[28px]">
