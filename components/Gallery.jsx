@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./swiper.css";
 import { Navigation } from "swiper/modules";
+import { galleryImages } from "./helpers/galleryImages";
 
 function Gallery() {
   return (
@@ -19,30 +22,11 @@ function Gallery() {
           <span className="font-thin">Our </span>Gallery
         </h2>
         <ul className="block md:hidden ">
-          <li className="relative h-[187px] mb-5 shadow-3xl">
-            <Image
-              src="/images/gallery1.jpg"
-              objectFit="cover"
-              fill
-              alt="Mountines"
-            />
-          </li>
-          <li className="relative h-[187px] mb-5 shadow-3xl">
-            <Image
-              src="/images/gallery2.jpg"
-              objectFit="cover"
-              fill
-              alt="Lake"
-            />
-          </li>
-          <li className="relative h-[187px] shadow-3xl">
-            <Image
-              src="/images/gallery3.jpg"
-              objectFit="cover"
-              fill
-              alt="Trees"
-            />
-          </li>
+          {galleryImages.slice(0, 3).map(({ title, fileName }, index) => (
+            <li key={index} className="relative h-[187px] mb-5 shadow-3xl">
+              <Image src={`/images/${fileName}`} fill alt={title} />
+            </li>
+          ))}
         </ul>
         <div className="relative hidden md:block ">
           <Swiper
@@ -60,72 +44,18 @@ function Gallery() {
             speed={500}
             className="gallerySwiper"
           >
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/gallery1.jpg"
-                  objectFit="cover"
-                  width={606}
-                  height={429}
-                  alt="Mountines"
-                />
-              </div>
-            </SwiperSlide>
+            {galleryImages.map(({ fileName, title }, index) => (
+              <SwiperSlide key={index}>
+                <div className="image-wrapper">
+                  <Image
+                    src={`/images/${fileName}`}
+                    width={606}
+                    height={429}
+                    alt={title}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className="swiper-button-prev">Prev</div>
           <div className="swiper-button-next">Next</div>

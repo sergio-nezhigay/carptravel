@@ -1,8 +1,6 @@
-import { useEffect } from "react";
-import Head from "next/head";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -19,7 +17,13 @@ export default function Navbar() {
         <div>
           <div className=" flex items-center justify-between py-9 md:py-6 md:block">
             <a href="#" className={navbar ? "invisible" : ""}>
-              <Image src="/images/logo.svg" width={61} height={33} alt="Logo" />
+              <Image
+                src="/images/logo.svg"
+                width="0"
+                height="0"
+                className="w-[63px]"
+                alt="Logo"
+              />
             </a>
             <div className="md:hidden">
               <button
@@ -40,19 +44,29 @@ export default function Navbar() {
             {/* Desktop Menu */}
             <ul className=" hidden md:flex text-sm leading-[17px] tracking-widest items-center justify-center space-y-8 md:space-x-6 xl:space-x-14  md:space-y-0">
               <li>
-                <Link href="/">Home</Link>
+                <ScrollLink to="about" spy={true} smooth={true} duration={500}>
+                  About
+                </ScrollLink>
               </li>
               <li>
-                <Link href="/#gallery">Gallery</Link>
+                <ScrollLink
+                  to="gallery"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Gallery
+                </ScrollLink>
               </li>
               <li>
-                <Link href="/#services">Services</Link>
-              </li>
-              <li>
-                <Link href="/#about">About</Link>
-              </li>
-              <li>
-                <Link href="/#contacts">Contacts</Link>
+                <ScrollLink
+                  to="contacts"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Contacts
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -65,29 +79,38 @@ export default function Navbar() {
         } md:hidden`}
       >
         <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <Link href="/" onClick={() => setNavbar(false)}>
-            Home
-          </Link>
-        </li>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <Link href="#gallery" onClick={() => setNavbar(false)}>
-            Gallery
-          </Link>
-        </li>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <Link href="#services" onClick={() => setNavbar(false)}>
-            Services
-          </Link>
-        </li>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <Link href="#about" onClick={() => setNavbar(false)}>
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavbar(false)}
+          >
             About
-          </Link>
+          </ScrollLink>
+        </li>
+
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <ScrollLink
+            to="gallery"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavbar(false)}
+          >
+            Gallery
+          </ScrollLink>
         </li>
         <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <Link href="#contacts" onClick={() => setNavbar(false)}>
+          <ScrollLink
+            to="contacts"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavbar(false)}
+          >
             Contacts
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
     </nav>

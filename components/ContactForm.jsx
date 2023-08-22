@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,6 +10,7 @@ import { schema } from "./helpers/schema";
 import FormField from "./FormField";
 
 export default function ContactForm() {
+  const [isFormSubmitted, setFormSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
@@ -28,12 +31,13 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        toast.success("Form submitted successfully");
+        toast.success("Your message sent successfully");
+        setFormSubmitted(true);
       } else {
-        toast.error("Error submitting form");
+        toast.error("Error during sending message");
       }
     } catch (error) {
-      toast.error("Error submitting form");
+      toast.error("Error during sending message");
     }
   };
 
@@ -75,6 +79,11 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
+      {isFormSubmitted && (
+        <div role="status" aria-live="polite" className="sr-only">
+          Your message has been sent successfully
+        </div>
+      )}
     </>
   );
 }

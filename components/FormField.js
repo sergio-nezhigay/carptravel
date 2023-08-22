@@ -15,6 +15,7 @@ const FormField = ({ label, name, register, errors, textarea }) => (
     {textarea ? (
       <textarea
         {...register(name)}
+        aria-invalid={errors[name] ? "true" : "false"}
         id={name}
         className={`w-full h-[193px] md:h-[221px] xl:h-[174px] resize-none px-2 py-1.5 text-xl focus:outline-none ${
           errors[name]
@@ -26,6 +27,7 @@ const FormField = ({ label, name, register, errors, textarea }) => (
       <input
         {...register(name)}
         id={name}
+        aria-invalid={errors[name] ? "true" : "false"}
         className={`w-full px-2 py-1.5 text-xl focus:outline-none ${
           errors[name]
             ? "text-error focus:text-error"

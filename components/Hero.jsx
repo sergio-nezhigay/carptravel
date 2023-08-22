@@ -1,11 +1,11 @@
 import React from "react";
-import OtherSection from "./Services";
 import Slogan from "./Slogan";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Hero() {
   return (
-    <section className="pt-[105px] md:pt-[121px] xl:pt-[130px] pb-[56px] md:pb-[64px] xl:pb-[110px] h-screen hero-img bg-img">
-      <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col justify-between md:grid h-full md:grid-rows-2 md:gap-x-[24px] md:grid-cols-[auto,250px] xl:grid-cols-[auto,370px] ">
+    <section className="pt-[105px] md:pt-[121px] xl:pt-[130px] pb-[56px] md:pb-[64px] xl:pb-[110px] h-screen hero">
+      <div className="container relative z-10 mx-auto px-5 md:px-8 xl:px-6 flex flex-col justify-between md:grid h-full md:grid-rows-2 md:gap-x-[24px] md:grid-cols-[auto,250px] xl:grid-cols-[auto,370px] ">
         <Slogan className="slogan " />
         <h1 className="text-4xl md:text-[67px] xl:text-[98px] md:leading-[81px] xl:leading-[119px] uppercase md:col-start-1 md:row-start-1 self-start  ">
           Uncover <br />
@@ -25,10 +25,17 @@ export default function Hero() {
             Carpathians. Enjoy stunning views, exciting expeditions, and the
             best service!
           </p>
-
-          <button className=" corners-border font-bold text-lg xl:text-lg ">
+          <ScrollLink
+            to="contacts"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="corners-border font-bold text-lg leading-[48px] flex items-center justify-center xl:text-[32px] tracking-widest"
+            type="button"
+            aria-label="Join our adventure"
+          >
             JOIN NOW
-          </button>
+          </ScrollLink>
         </div>
       </div>
     </section>
