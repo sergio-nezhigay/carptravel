@@ -15,15 +15,15 @@ function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen gallery gallery-img1 bg-img1 text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className="py-[56px] md:py-[64px] xl:py-[104px] gallery md:h-screen text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
     >
-      <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
+      <div className="container mx-auto relative  px-5 md:px-8 xl:px-6 md:h-full md:flex md:flex-col md:justify-between ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase  md:col-start-1 md:row-start-1 md:self-start mb-6 md:mb-[75px] xl:mb-[28px]">
           <span className="font-thin">Our </span>Gallery
         </h2>
         <ul className="block md:hidden ">
           {galleryImages.slice(0, 3).map(({ title, fileName }, index) => (
-            <li key={index} className="relative h-[187px] mb-5 shadow-3xl">
+            <li key={index} className="relative h-[187px] mb-6 last:mb-0 ">
               <Image src={`/images/${fileName}`} fill alt={title} />
             </li>
           ))}
@@ -57,8 +57,8 @@ function Gallery() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev">Prev</div>
-          <div className="swiper-button-next">Next</div>
+          <div className="swiper-button-prev link">Prev</div>
+          <div className="swiper-button-next link">Next</div>
         </div>
       </div>
     </section>

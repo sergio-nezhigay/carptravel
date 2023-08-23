@@ -65,8 +65,9 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  display: none;
+  font-size: 0px;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   text-transform: uppercase;
@@ -75,13 +76,9 @@
   font-size: 33px;
   color: #fff;
   line-height: 33px;
-  text-decoration: none;
   transition: text-decoration 0.3s ease-in-out;
 }
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  text-decoration: underline;
-}
+
 .swiper-button-prev {
   transform: translate(56px, 110px);
 }

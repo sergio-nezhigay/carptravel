@@ -44,7 +44,13 @@ export default function Navbar() {
             {/* Desktop Menu */}
             <ul className=" hidden md:flex text-sm leading-[17px] tracking-widest items-center justify-center space-y-8 md:space-x-6 xl:space-x-14  md:space-y-0">
               <li>
-                <ScrollLink to="about" spy={true} smooth={true} duration={500}>
+                <ScrollLink
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="link"
+                >
                   About
                 </ScrollLink>
               </li>
@@ -54,6 +60,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  className="link"
                 >
                   Gallery
                 </ScrollLink>
@@ -64,6 +71,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  className="link"
                 >
                   Contacts
                 </ScrollLink>

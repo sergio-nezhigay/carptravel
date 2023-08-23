@@ -5,9 +5,9 @@ function About() {
   return (
     <section
       id="about"
-      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen about about-img1 bg-img1 text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className="py-[56px] md:py-[64px] xl:py-[104px] md:h-screen about  text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
     >
-      <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col justify-between md:grid h-full md:auto-rows-auto md:gap-x-[24px] md:grid-cols-[auto,220px] xl:grid-cols-[50%,50%]  ">
+      <div className="container mx-auto px-5 md:px-8 xl:px-6 md:grid h-full md:auto-rows-auto md:gap-x-[24px] md:grid-cols-[auto,220px] xl:grid-cols-[50%,50%]  ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase mb-2 md:col-start-1 md:row-start-1 md:self-start">
           <span className="font-thin">WHO </span>WE ARE
         </h2>
@@ -32,7 +32,7 @@ function About() {
           </span>
         </p>
 
-        <div className=" md:col-start-1 md:row-start-2 xl:row-start-3 xl:col-start-2 md:self-end xl:ml-auto  ">
+        <div className="mb-10 md:col-start-1 md:row-start-2 xl:row-start-3 xl:col-start-2 md:self-end xl:ml-auto  ">
           <h3 className=" uppercase ">
             <span className="mr-5 ml-auto md:ml-0 w-fit block">
               From vacationers <br />
@@ -41,12 +41,12 @@ function About() {
               to active travelers
             </span>
           </h3>
-          <p className="font-extralight ml-auto md:ml-0 w-fit  mb-10 md:mb-0">
+          <p className="font-extralight ml-auto md:ml-0 w-fit   md:mb-0">
             we have a tour for everyone.
           </p>
         </div>
 
-        <p className="  mb-10 md:mb-0 md:col-start-1 md:pt-16 md:row-start-3 md:col-span-2 xl:col-span-1 md:self-end  md:max-w-[463px] xl:max-w-none md: ml-auto">
+        <p className=" md:mb-0 md:col-start-1 md:pt-16 md:row-start-3 md:col-span-2 xl:col-span-1 md:self-end  md:max-w-[463px] xl:max-w-none md: ml-auto">
           We use methods
           <span className="font-extralight">
             &nbsp; that are time-tested and proven. Our expert guides with
