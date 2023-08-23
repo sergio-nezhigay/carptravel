@@ -32,7 +32,7 @@ function About() {
           </span>
         </p>
 
-        <div className="mb-10 md:col-start-1 md:row-start-2 xl:row-start-3 xl:col-start-2 md:self-end xl:ml-auto  ">
+        <div className="mb-10 md:mb-0 md:col-start-1 md:row-start-2 xl:row-start-3 xl:col-start-2 md:self-end xl:ml-auto  ">
           <h3 className=" uppercase ">
             <span className="mr-5 ml-auto md:ml-0 w-fit block">
               From vacationers <br />

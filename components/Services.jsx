@@ -5,6 +5,8 @@ import { EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "./swiper.css";
 
 import { servicesList } from "./helpers/servicesList";
@@ -43,6 +45,8 @@ function Services() {
         <div>
           <Swiper
             effect="fade"
+            speed="1000"
+            autoplay="2500"
             modules={[EffectFade]}
             onSwiper={setSwiperInstance}
             className="services-swiper"

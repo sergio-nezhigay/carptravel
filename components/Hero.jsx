@@ -16,7 +16,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="font-extralight text-[10px] mb-6 max-w-[180px] md:max-w-[240px] xl:max-w-none md:text-[14px] xl:text-[16px] leading-4  md:col-start-1 self-end ">
+        <p className="font-extralight text-[10px] mb-6 md:mb-0 max-w-[180px] md:max-w-[240px] xl:max-w-none md:text-[14px] xl:text-[16px] leading-4  md:col-start-1 self-end ">
           Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
         </p>
         <div className=" md:col-start-2 md:row-start-2 md:row-span-1 self-end ">

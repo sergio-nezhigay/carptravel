@@ -57,8 +57,8 @@ function Gallery() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev link">Prev</div>
-          <div className="swiper-button-next link">Next</div>
+          <div className="swiper-button-prev ">Prev</div>
+          <div className="swiper-button-next ">Next</div>
         </div>
       </div>
     </section>
