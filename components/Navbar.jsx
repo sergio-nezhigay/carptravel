@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 w-full container justify-between px-5 md:mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className=" flex items-center justify-between py-9 md:py-6 md:block">
-            <a href="#" className={navbar ? "invisible" : ""}>
+            <a href="/" className={navbar ? "invisible" : ""}>
               <Image
                 src="/images/logo.svg"
                 width="0"

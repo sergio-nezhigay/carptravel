@@ -36,7 +36,7 @@ function Contacts() {
             <ul className="text-sm leading-6 md:col-start-4 xl:col-start-1 xl:row-start-3 md:row-span-2 xl:text-right xl:row-span-1 ">
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
@@ -46,7 +46,7 @@ function Contacts() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
@@ -56,7 +56,7 @@ function Contacts() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
@@ -66,7 +66,7 @@ function Contacts() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
