@@ -56,6 +56,17 @@ export default function Navbar() {
               </li>
               <li>
                 <ScrollLink
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="link"
+                >
+                  Services
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
                   to="gallery"
                   spy={true}
                   smooth={true}
@@ -95,6 +106,17 @@ export default function Navbar() {
             onClick={() => setNavbar(false)}
           >
             About
+          </ScrollLink>
+        </li>
+        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
+          <ScrollLink
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavbar(false)}
+          >
+            Services
           </ScrollLink>
         </li>
 

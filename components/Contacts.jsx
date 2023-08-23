@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <section
       id="contacts"
-      className="py-[56px] md:py-[64px] xl:py-[104px] md:h-screen  contacts text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className=" py-[56px] md:py-[64px] xl:py-[104px] contacts text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
     >
       <div className="container mx-auto relative  px-5 md:px-8 xl:px-6 md:h-full md:flex md:flex-col md:justify-between ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[66px] xl:leading-[119px] uppercase  md:col-start-1 md:row-start-1 md:self-start mb-9 xl:mb-[71px]">

@@ -1,102 +1,60 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
+import { EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./swiper.css";
-import { Pagination, Navigation } from "swiper/modules";
 
-const slides = [
-  {
-    title: "ATVS",
-    description: "Join exciting rafting",
-    slogan: "Feel the adrenaline rush",
-  },
-  {
-    title: "Rock climbing",
-    description: "Overcome the peaks ",
-    slogan: "Destroy your limitations",
-  },
-  {
-    title: "Hot air ballooning",
-    description: "Feel Zen over the mountain ",
-    slogan: "Get Inspired",
-  },
-  {
-    title: "Skydiving",
-    description: "Fly in the sky o",
-    slogan: "Overcome your fears",
-  },
-  {
-    title: "Rafting",
-    description:
-      "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-    slogan: "Trust the flow",
-  },
-];
+import { servicesList } from "./helpers/servicesList";
+import { addTrailingZero } from "./helpers/addTrailingZero";
+
+import ServiceCard from "./ServiceCard";
+import Image from "next/image";
 
 function Services() {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [currentMenuIndex, setCurrentMenuIndex] = useState(0);
 
   const handlePaginationClick = (index) => {
-    console.log("🚀  handlePaginationClick ~ index:", index);
     if (swiperInstance) {
       swiperInstance.slideTo(index);
+      setCurrentMenuIndex(index);
     }
   };
+  const totalServices = addTrailingZero(servicesList.length);
+
   return (
     <section
       id="services"
-      className="py-[56px] md:py-[64px] xl:py-[104px] h-screen gallery-img1 bg-img1 text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
+      className="relative py-[56px] md:py-[64px] xl:py-[104px] text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6 service"
     >
       <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
-        <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase  md:col-start-1 md:row-start-1 md:self-start mb-6 md:mb-[72px] xl:mb-[24px]">
-          <span className="font-thin">We </span>Offer
-        </h2>
+        <Image
+          src={`/images/${servicesList[currentMenuIndex].imageBG}`}
+          fill
+          quality={100}
+          sizes="100vw"
+          alt="service.title"
+          className=" object-cover object-center "
+        />
 
         <div>
           <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            speed={600}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="servicesSwiper"
+            effect="fade"
+            modules={[EffectFade]}
             onSwiper={setSwiperInstance}
-            onSlideChange={(swiper) => {
-              // This callback will be called whenever the slide changes
-              console.log("Current slide index:", swiper.realIndex);
-            }}
+            className="services-swiper"
           >
-            {slides.map((slide, slideIndex) => (
-              <SwiperSlide key={slideIndex}>
-                <div
-                  className="cardDetails"
-                  onClick={() => console.log("clicked")}
-                >
-                  <div>
-                    <div>{slide.slideIndex}</div>
-                    <div>{slide.title}</div>
-                    <div>{slide.slogan}</div>
-                    <hr />
-                  </div>
-                  <div className="pagination-menu">
-                    {slides.map((menuItem, index) => (
-                      <div
-                        key={index}
-                        className="pagination-bullet"
-                        onClick={() => handlePaginationClick(index)}
-                      >
-                        <span>{index}</span>
-                        <span>{menuItem.title}</span>
-                        {slideIndex === index ? "Curren1t" : "Go to"}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+            {servicesList.map((service, serviceIndex) => (
+              <SwiperSlide key={serviceIndex}>
+                <ServiceCard
+                  service={service}
+                  serviceIndex={serviceIndex}
+                  total={totalServices}
+                  handlePaginationClick={handlePaginationClick}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
