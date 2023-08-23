@@ -34,7 +34,7 @@ function Services() {
     >
       <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
         <Image
-          src={`/images/${servicesList[currentMenuIndex].imageBG}`}
+          src={`/images${servicesList[currentMenuIndex].imageBG}`}
           fill
           quality={100}
           sizes="100vw"
