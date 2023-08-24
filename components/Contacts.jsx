@@ -1,12 +1,12 @@
-import React from "react";
-import ContactForm from "./ContactForm";
+import React from 'react';
+
+import ContactForm from './ContactForm';
 
 function Contacts() {
   return (
     <section
       id="contacts"
-      className=" py-[56px] md:py-[64px] xl:py-[104px] contacts text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6"
-    >
+      className=" py-[56px] md:py-[64px] xl:py-[104px] contacts text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6">
       <div className="container mx-auto relative  px-5 md:px-8 xl:px-6 md:h-full md:flex md:flex-col md:justify-between ">
         <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[66px] xl:leading-[119px] uppercase  md:col-start-1 md:row-start-1 md:self-start mb-9 xl:mb-[71px]">
           <span className="font-thin">Contact </span>US
@@ -39,8 +39,7 @@ function Contacts() {
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link"
-                >
+                  className="link">
                   facebook
                 </a>
               </li>
@@ -49,8 +48,7 @@ function Contacts() {
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link"
-                >
+                  className="link">
                   instagram
                 </a>
               </li>
@@ -59,8 +57,7 @@ function Contacts() {
                   href="https://www.youtube.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link"
-                >
+                  className="link">
                   youtube
                 </a>
               </li>
@@ -69,8 +66,7 @@ function Contacts() {
                   href="https://www.tiktok.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link"
-                >
+                  className="link">
                   tiktok
                 </a>
               </li>

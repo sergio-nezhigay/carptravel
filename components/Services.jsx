@@ -1,19 +1,18 @@
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper/modules";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { EffectFade } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-import "./swiper.css";
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 
-import { servicesList } from "./helpers/servicesList";
-import { addTrailingZero } from "./helpers/addTrailingZero";
+import { servicesList } from './helpers/servicesList';
+import ServiceCard from './ServiceCard';
 
-import ServiceCard from "./ServiceCard";
-import Image from "next/image";
+import 'swiper/css';
+import './swiper.css';
 
 function Services() {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -25,13 +24,11 @@ function Services() {
       setCurrentMenuIndex(index);
     }
   };
-  const totalServices = addTrailingZero(servicesList.length);
 
   return (
     <section
       id="services"
-      className="relative py-[56px] md:py-[64px] xl:py-[104px] text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6 service"
-    >
+      className="relative py-[56px] md:py-[64px] xl:py-[104px] text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6 service">
       <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
         <Image
           src={`/images${servicesList[currentMenuIndex].imageBG}`}
@@ -49,14 +46,13 @@ function Services() {
             autoplay="2500"
             modules={[EffectFade]}
             onSwiper={setSwiperInstance}
-            className="services-swiper"
-          >
+            className="services-swiper">
             {servicesList.map((service, serviceIndex) => (
               <SwiperSlide key={serviceIndex}>
                 <ServiceCard
                   service={service}
                   serviceIndex={serviceIndex}
-                  total={totalServices}
+                  total={servicesList.length}
                   handlePaginationClick={handlePaginationClick}
                 />
               </SwiperSlide>

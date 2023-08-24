@@ -1,6 +1,8 @@
-import React from "react";
-import { servicesList } from "./helpers/servicesList";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+
+import { addTrailingZero } from './helpers/addTrailingZero';
+import { servicesList } from './helpers/servicesList';
 
 function ServiceCard({ service, serviceIndex, handlePaginationClick, total }) {
   return (
@@ -10,8 +12,8 @@ function ServiceCard({ service, serviceIndex, handlePaginationClick, total }) {
           <span className="font-thin">We </span>Offer
         </h2>
         <div className="text-[43px] md:text-[67px] xl:text-[98px] leading-[52px] md:leading-[68px] xl:leading-[119px] font-thin mb-4 md:mb-0 text-right xl:flex-1 xl:text-left ">
-          <span>{serviceIndex + 1}</span>/
-          <span className="opacity-20">{total}</span>
+          <span>{addTrailingZero(serviceIndex + 1)}</span>/
+          <span className="opacity-20">{addTrailingZero(total)}</span>
         </div>
       </div>
       <div className="md:grid md:grid-cols-[463px,auto] xl:grid-cols-[50%,1fr,1fr] md:gap-x-5 ">
@@ -33,15 +35,13 @@ function ServiceCard({ service, serviceIndex, handlePaginationClick, total }) {
               <li
                 key={menuIndex}
                 className="mb-4 last:mb-0"
-                onClick={() => handlePaginationClick(menuIndex)}
-              >
+                onClick={() => handlePaginationClick(menuIndex)}>
                 <button
                   className={`text-left text-xl md:text-[22px] xl:text-[28px] leading-[17px] md:leading-[18px] xl:leading-[24px] uppercase ${
                     isActive
-                      ? "font-medium active-menu"
-                      : "font-extralight opacity-50"
-                  }`}
-                >
+                      ? 'font-medium active-menu'
+                      : 'font-extralight opacity-50'
+                  }`}>
                   {menuItem.title}
                 </button>
               </li>

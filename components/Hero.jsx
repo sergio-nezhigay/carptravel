@@ -1,6 +1,7 @@
-import React from "react";
-import Slogan from "./Slogan";
-import { Link as ScrollLink } from "react-scroll";
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+
+import Slogan from './Slogan';
 
 export default function Hero() {
   return (
@@ -32,8 +33,7 @@ export default function Hero() {
             duration={500}
             className="corners-border font-bold text-lg leading-[48px] flex items-center justify-center xl:text-[32px] tracking-widest"
             type="button"
-            aria-label="Join our adventure"
-          >
+            aria-label="Join our adventure">
             JOIN NOW
           </ScrollLink>
         </div>

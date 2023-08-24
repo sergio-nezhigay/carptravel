@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Link as ScrollLink } from "react-scroll";
+import { useEffect, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   useEffect(() => {
-    document.body.style.overflow = navbar ? "hidden" : "visible";
+    document.body.style.overflow = navbar ? 'hidden' : 'visible';
     return () => {
-      document.body.style.overflow = "visible";
+      document.body.style.overflow = 'visible';
     };
   }, [navbar]);
 
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 w-full container justify-between px-5 md:mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className=" flex items-center justify-between py-9 md:py-6 md:block">
-            <a href="/" className={navbar ? "invisible" : ""}>
+            <a href="/" className={navbar ? 'invisible' : ''}>
               <Image
                 src="/images/logo.svg"
                 width="0"
@@ -28,8 +28,7 @@ export default function Navbar() {
             <div className="md:hidden">
               <button
                 className=" outline-none text-sm tracking-widest "
-                onClick={() => setNavbar(!navbar)}
-              >
+                onClick={() => setNavbar(!navbar)}>
                 {navbar ? <span>CLOSE</span> : <span>OPEN</span>}
               </button>
             </div>
@@ -38,9 +37,8 @@ export default function Navbar() {
         <div>
           <div
             className={` flex-1 justify-self-center mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            } md:flex`}
-          >
+              navbar ? 'block' : 'hidden'
+            } md:flex`}>
             {/* Desktop Menu */}
             <ul className=" hidden md:flex text-sm leading-[17px] tracking-widest items-center justify-center space-y-8 md:space-x-6 xl:space-x-14  md:space-y-0">
               <li>
@@ -49,8 +47,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="link"
-                >
+                  className="link">
                   About
                 </ScrollLink>
               </li>
@@ -60,8 +57,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="link"
-                >
+                  className="link">
                   Services
                 </ScrollLink>
               </li>
@@ -71,8 +67,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="link"
-                >
+                  className="link">
                   Gallery
                 </ScrollLink>
               </li>
@@ -82,8 +77,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="link"
-                >
+                  className="link">
                   Contacts
                 </ScrollLink>
               </li>
@@ -94,17 +88,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <ul
         className={`absolute flex flex-col justify-center items-center h-screen w-screen left-0 top-0  z-20 bg-custom-green ${
-          navbar ? "block" : "hidden"
-        } md:hidden`}
-      >
+          navbar ? 'block' : 'hidden'
+        } md:hidden`}>
         <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
           <ScrollLink
             to="about"
             spy={true}
             smooth={true}
             duration={500}
-            onClick={() => setNavbar(false)}
-          >
+            onClick={() => setNavbar(false)}>
             About
           </ScrollLink>
         </li>
@@ -114,8 +106,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            onClick={() => setNavbar(false)}
-          >
+            onClick={() => setNavbar(false)}>
             Services
           </ScrollLink>
         </li>
@@ -126,8 +117,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            onClick={() => setNavbar(false)}
-          >
+            onClick={() => setNavbar(false)}>
             Gallery
           </ScrollLink>
         </li>
@@ -137,8 +127,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            onClick={() => setNavbar(false)}
-          >
+            onClick={() => setNavbar(false)}>
             Contacts
           </ScrollLink>
         </li>
