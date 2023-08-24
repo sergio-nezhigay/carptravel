@@ -1,12 +1,13 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+import './globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "CarpTravel",
+  title: 'CarpTravel',
   description:
-    "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
+    'We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
 };
 
 export default function RootLayout({ children }) {
