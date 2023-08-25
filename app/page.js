@@ -1,4 +1,5 @@
 'use client';
+
 import About from '@/components/About';
 import Contacts from '@/components/Contacts';
 import Gallery from '@/components/Gallery';
