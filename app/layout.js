@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'CarpTravel',
+  'next-size-adjust': 'none',
   description:
     'We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
   openGraph: {
@@ -23,6 +24,19 @@ export const metadata = {
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

@@ -16,15 +16,15 @@ function ServiceCard({ service, serviceIndex, handlePaginationClick, total }) {
           <span className="opacity-20">{addTrailingZero(total)}</span>
         </div>
       </div>
-      <div className="md:grid md:grid-cols-[463px,auto] xl:grid-cols-[50%,1fr,1fr] md:gap-x-5 ">
-        <figure className="object-cover w-auto h-[213px]  mb-[12px] md:mb-0 md:h-[370px] xl:h-[429px] md:w-full md:row-span-3 xl:row-span-2">
+      <div className="relative md:grid md:grid-cols-[463px,auto] xl:grid-cols-[50%,1fr,1fr] md:gap-x-5 ">
+        <div className="relative object-cover w-auto h-[213px]  mb-[12px] md:mb-0 md:h-[370px] xl:h-[429px] md:w-full md:row-span-3 xl:row-span-2">
           <Image
             src={`/images${service.imageSmall}`}
-            width="607"
-            height="429"
+            fill
             alt={`${service.title}`}
+            className="object-cover w-full"
           />
-        </figure>
+        </div>
         <figcaption className="font-extralight text-right md:text-left mb-6 md:mb-[34px] text-[12px] leading-6 tracking-[0.20em] md:col-start-2 md:row-start-2 xl:col-start-3 xl:row-start-1">
           {service.slogan}
         </figcaption>

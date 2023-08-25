@@ -29,16 +29,7 @@ function Services() {
     <section
       id="services"
       className="relative py-[56px] md:py-[64px] xl:py-[104px] text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6 service">
-      <div className="container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
-        <Image
-          src={`/images${servicesList[currentMenuIndex].imageBG}`}
-          fill
-          quality={100}
-          sizes="100vw"
-          alt="service.title"
-          className=" object-cover object-center "
-        />
-
+      <div className="relative container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
         <div>
           <Swiper
             effect="fade"
@@ -60,6 +51,13 @@ function Services() {
           </Swiper>
         </div>
       </div>
+      <Image
+        src={`/images${servicesList[currentMenuIndex].imageBG}`}
+        fill
+        sizes="100vw"
+        alt="service.title"
+        className=" object-cover object-center "
+      />
     </section>
   );
 }

@@ -25,7 +25,12 @@ function Gallery() {
         <ul className="block md:hidden ">
           {galleryImages.slice(0, 3).map(({ title, fileName }, index) => (
             <li key={index} className="relative h-[187px] mb-6 last:mb-0 ">
-              <Image src={`/images/${fileName}`} fill alt={title} />
+              <Image
+                src={`/images/${fileName}`}
+                fill
+                sizes="100vw"
+                alt={title}
+              />
             </li>
           ))}
         </ul>
