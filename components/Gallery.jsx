@@ -57,6 +57,7 @@ function Gallery() {
                     width={606}
                     height={429}
                     alt={title}
+                    sizes="(min-width: 768px) 415px, (min-width: 1200px) 607px"
                   />
                 </div>
               </SwiperSlide>
