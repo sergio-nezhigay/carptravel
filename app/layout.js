@@ -1,12 +1,13 @@
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
-import './globals.css';
+import '../styles/globals.css';
 
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
+      {/* <body className={inter.className}>{children}</body> */}
     </html>
   );
 }
