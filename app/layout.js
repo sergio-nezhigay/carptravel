@@ -1,11 +1,21 @@
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] });
-import '../styles/globals.css';
+// const inter = Inter({ subsets: ['latin'] });
+import './globals.css';
 
 export default function Layout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>CarpTravel</title>
+        <meta
+          name="description"
+          content="Uncover Carpathian’s Secrets"
+          key="desc"
+        />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
       <body>{children}</body>
       {/* <body className={inter.className}>{children}</body> */}
     </html>
