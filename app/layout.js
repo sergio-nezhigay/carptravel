@@ -22,9 +22,9 @@ export const metadata = {
   //       height: 530,
   //     },
   //   ],
-    locale: 'en_US',
-    type: 'website',
-  },
+  //   locale: 'en_US',
+  //   type: 'website',
+  // },
   // robots: {
   //   index: false,
   //   follow: true,
