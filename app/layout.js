@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'CarpTravel',
+  'next-size-adjust': 'test',
   description:
     'We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
   openGraph: {
