@@ -1,5 +1,7 @@
+// 'use client';
+
 import { useEffect, useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+  import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
 
 export default function Navbar() {

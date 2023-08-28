@@ -4,13 +4,13 @@ function About() {
   return (
     <section
       id="about"
-      className="py-[56px] md:py-[64px] xl:py-[104px] about  text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6">
-      <div className="container mx-auto px-5 md:px-8 xl:px-6 md:grid h-full md:auto-rows-auto md:gap-x-[24px] md:grid-cols-[auto,220px] xl:grid-cols-[50%,50%]  ">
-        <h2 className="text-4xl md:text-[67px] xl:text-[98px]  md:leading-[81px] xl:leading-[119px] uppercase mb-2 md:col-start-1 md:row-start-1 md:self-start">
+      className="about py-[56px] text-sm    md:py-[64px] md:text-base md:leading-5 xl:py-[104px] xl:text-lg xl:leading-6">
+      <div className="container mx-auto h-full px-5 md:grid md:auto-rows-auto md:grid-cols-[auto,220px] md:gap-x-[24px] md:px-8 xl:grid-cols-[50%,50%] xl:px-6  ">
+        <h2 className=" mb-2 text-4xl uppercase  md:col-start-1 md:row-start-1 md:self-start md:text-[67px] md:leading-[81px] xl:text-[98px] xl:leading-[119px]">
           <span className="font-thin">WHO </span>WE ARE
         </h2>
 
-        <p className="  mb-5 md:mb-4 max-w-[180px] md:max-w-none xl:max-w-[292px] md:col-start-2 md:row-start-1">
+        <p className="  mb-5 max-w-[180px] md:col-start-2 md:row-start-1 md:mb-4 md:max-w-none xl:max-w-[292px]">
           a team of enthusiasts
           <span className="font-extralight">
             &nbsp;who are fully committed to the mission of creating
@@ -20,7 +20,7 @@ function About() {
             in their magical atmosphere.
           </span>
         </p>
-        <p className="  mb-10 md:mb-0 max-w-[180px] md:max-w-none xl:max-w-[292px] md:col-start-2 row-start-2 md:self-end">
+        <p className="  row-start-2 mb-10 max-w-[180px]  md:col-start-2 md:mb-0 md:max-w-none md:self-end xl:max-w-[292px]">
           We believe
           <span className="font-extralight">
             &nbsp; that nature has the power to inspire, strengthen character
@@ -30,21 +30,21 @@ function About() {
           </span>
         </p>
 
-        <div className="mb-10 md:mb-0 md:col-start-1 md:row-start-2 xl:row-start-3 xl:col-start-2 md:self-end xl:ml-auto  ">
+        <div className="mb-10 md:col-start-1 md:row-start-2 md:mb-0 md:self-end xl:col-start-2 xl:row-start-3 xl:ml-auto  ">
           <h3 className=" uppercase ">
-            <span className="mr-5 ml-auto md:ml-0 w-fit block">
+            <span className="ml-auto mr-5 block w-fit  md:ml-0">
               From vacationers <br />
             </span>
-            <span className="ml-auto md:ml-5 xl:ml-[100px] w-fit block ">
+            <span className="ml-auto block w-fit md:ml-5 xl:ml-[100px] ">
               to active travelers
             </span>
           </h3>
-          <p className="font-extralight ml-auto md:ml-0 w-fit   md:mb-0">
+          <p className="ml-auto w-fit font-extralight md:mb-0   md:ml-0">
             we have a tour for everyone.
           </p>
         </div>
 
-        <p className=" md:mb-0 md:col-start-1 md:pt-16 md:row-start-3 md:col-span-2 xl:col-span-1 md:self-end  md:max-w-[463px] xl:max-w-none md: ml-auto">
+        <p className=" md: ml-auto md:col-span-2 md:col-start-1 md:row-start-3 md:mb-0 md:max-w-[463px]  md:self-end md:pt-16 xl:col-span-1 xl:max-w-none">
           We use methods
           <span className="font-extralight">
             &nbsp; that are time-tested and proven. Our expert guides with
