@@ -18,10 +18,8 @@ export default function Home() {
         <About />
         <Services />
         <Gallery />
-      </main>
-      <footer>
         <Contacts />
-      </footer>
+      </main>
     </>
   );
 }

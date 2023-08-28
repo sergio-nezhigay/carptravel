@@ -1,8 +1,8 @@
-// 'use client';
-
 import { useEffect, useState } from 'react';
-  import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
+
+const MENU_ITEMS = ['about', 'services', 'gallery', 'contacts'];
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -14,10 +14,10 @@ export default function Navbar() {
   }, [navbar]);
 
   return (
-    <nav className="w-full relative  shadow">
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30 w-full container justify-between px-5 md:mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="relative w-full  shadow">
+      <div className="lg:max-w-7xl container absolute left-1/2 top-0 z-30 w-full -translate-x-1/2 transform justify-between px-5 md:mx-auto md:flex md:items-center md:px-8">
         <div>
-          <div className=" flex items-center justify-between py-9 md:py-6 md:block">
+          <div className=" flex items-center justify-between py-9 md:block md:py-6">
             <a href="/" className={navbar ? 'invisible' : ''}>
               <Image
                 src="/images/logo.svg"
@@ -29,7 +29,7 @@ export default function Navbar() {
             </a>
             <div className="md:hidden">
               <button
-                className=" outline-none text-sm tracking-widest "
+                className=" text-sm tracking-widest outline-none "
                 onClick={() => setNavbar(!navbar)}>
                 {navbar ? <span>CLOSE</span> : <span>OPEN</span>}
               </button>
@@ -38,101 +38,47 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={` flex-1 justify-self-center mt-8 md:block md:pb-0 md:mt-0 ${
+            className={` mt-8 flex-1 justify-self-center md:mt-0 md:block md:pb-0 ${
               navbar ? 'block' : 'hidden'
             } md:flex`}>
             {/* Desktop Menu */}
-            <ul className=" hidden md:flex text-sm leading-[17px] tracking-widest items-center justify-center space-y-8 md:space-x-6 xl:space-x-14  md:space-y-0">
-              <li>
-                <ScrollLink
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="link">
-                  About
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  to="services"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="link">
-                  Services
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  to="gallery"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="link">
-                  Gallery
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  to="contacts"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="link">
-                  Contacts
-                </ScrollLink>
-              </li>
+            <ul className=" hidden items-center justify-center space-y-8 text-sm leading-[17px] tracking-widest md:flex md:space-x-6 md:space-y-0  xl:space-x-14">
+              {MENU_ITEMS.map((item) => (
+                <li key={item}>
+                  <ScrollLink
+                    to={item}
+                    href={item}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="link capitalize">
+                    {item}
+                  </ScrollLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
       {/* Mobile Menu */}
       <ul
-        className={`absolute flex flex-col justify-center items-center h-screen w-screen left-0 top-0  z-20 bg-custom-green ${
+        className={`absolute left-0 top-0 z-20 flex h-screen w-screen flex-col items-center  justify-center bg-custom-green ${
           navbar ? 'block' : 'hidden'
         } md:hidden`}>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <ScrollLink
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            onClick={() => setNavbar(false)}>
-            About
-          </ScrollLink>
-        </li>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <ScrollLink
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            onClick={() => setNavbar(false)}>
-            Services
-          </ScrollLink>
-        </li>
-
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <ScrollLink
-            to="gallery"
-            spy={true}
-            smooth={true}
-            duration={500}
-            onClick={() => setNavbar(false)}>
-            Gallery
-          </ScrollLink>
-        </li>
-        <li className="block uppercase tracking-widest text-lg leading-[22px] py-6">
-          <ScrollLink
-            to="contacts"
-            spy={true}
-            smooth={true}
-            duration={500}
-            onClick={() => setNavbar(false)}>
-            Contacts
-          </ScrollLink>
-        </li>
+        {MENU_ITEMS.map((item) => (
+          <li
+            key={item}
+            className="block py-6 text-lg uppercase leading-[22px] tracking-widest">
+            <ScrollLink
+              to={item}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => setNavbar(false)}>
+              {item}
+            </ScrollLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

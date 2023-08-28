@@ -37,6 +37,7 @@ function ServiceCard({ service, serviceIndex, handlePaginationClick, total }) {
                 className="mb-4 last:mb-0"
                 onClick={() => handlePaginationClick(menuIndex)}>
                 <button
+                  type="button"
                   className={`text-left text-xl uppercase leading-[17px] md:text-[22px] md:leading-[18px] xl:text-[28px] xl:leading-[24px] ${
                     isActive
                       ? 'active-menu font-medium'
