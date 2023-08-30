@@ -5,7 +5,7 @@ function About() {
     <section
       id="about"
       className="about py-[56px] text-sm    md:py-[64px] md:text-base md:leading-5 xl:py-[104px] xl:text-lg xl:leading-6">
-      <div className="container mx-auto h-full px-5 md:grid md:auto-rows-auto md:grid-cols-[auto,220px] md:gap-x-[24px] md:px-8 xl:grid-cols-[50%,50%] xl:px-6  ">
+      <div className="container h-full md:grid md:auto-rows-auto md:grid-cols-[auto,220px] md:gap-x-[24px] xl:grid-cols-[50%,50%]  ">
         <h2 className=" mb-2 text-4xl uppercase  md:col-start-1 md:row-start-1 md:self-start md:text-[67px] md:leading-[81px] xl:text-[98px] xl:leading-[119px]">
           <span className="font-thin">WHO </span>WE ARE
         </h2>

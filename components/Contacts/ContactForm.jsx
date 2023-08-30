@@ -1,13 +1,12 @@
-'use client';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast, ToastContainer } from 'react-toastify';
+import { schema } from '@helpers/schema';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import 'react-toastify/dist/ReactToastify.css';
-require('dotenv').config();
-import { schema } from './helpers/schema';
 import FormField from './FormField';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
@@ -46,7 +45,7 @@ export default function ContactForm() {
       <ToastContainer />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="font-extralight  text-xs tracking-[0.20em] leading-6 md:grid md:grid-cols-[221px,auto] xl:block xl:w-1/2 md:gap-5">
+        className="text-xs  font-extralight leading-6 tracking-[0.20em] md:grid md:grid-cols-[221px,auto] md:gap-5 xl:block xl:w-1/2">
         <div className="xl:flex xl:w-full xl:gap-5">
           <FormField
             label="Full name"
@@ -72,7 +71,7 @@ export default function ContactForm() {
           />
           <button
             type="submit"
-            className="link font-medium outline-none text-[30px] xl:text-[32px] leading-9 ml-auto block">
+            className="link ml-auto block text-[30px] font-medium leading-9 focus:outline-8 active:outline-2 xl:text-[32px]">
             SEND
           </button>
         </div>

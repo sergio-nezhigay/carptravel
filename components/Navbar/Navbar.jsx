@@ -15,12 +15,13 @@ export default function Navbar() {
 
   return (
     <nav className="relative w-full  shadow">
-      <div className="lg:max-w-7xl container absolute left-1/2 top-0 z-30 w-full -translate-x-1/2 transform justify-between px-5 md:mx-auto md:flex md:items-center md:px-8">
+      <div className="lg:max-w-7xl container absolute left-1/2 top-0 z-30 w-full -translate-x-1/2 transform justify-between  md:flex md:items-center ">
         <div>
           <div className=" flex items-center justify-between py-9 md:block md:py-6">
             <a href="/" className={navbar ? 'invisible' : ''}>
               <Image
                 src="/images/logo.svg"
+                priority
                 width="0"
                 height="0"
                 className="w-[63px]"

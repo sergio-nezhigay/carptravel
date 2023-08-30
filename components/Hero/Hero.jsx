@@ -6,7 +6,7 @@ import Slogan from './Slogan';
 export default function Hero() {
   return (
     <section className="hero pb-[56px] pt-[105px] md:h-screen md:pb-[64px] md:pt-[121px] xl:pb-[110px] xl:pt-[130px]">
-      <div className="container relative z-10 mx-auto flex h-full flex-col justify-between px-5 md:grid md:grid-cols-[auto,250px] md:grid-rows-2 md:gap-x-[24px] md:px-8 xl:grid-cols-[auto,370px] xl:px-6 ">
+      <div className="container relative z-10 flex h-full flex-col justify-between md:grid md:grid-cols-[auto,250px] md:grid-rows-2 md:gap-x-[24px] xl:grid-cols-[auto,370px]  ">
         <Slogan className="slogan " />
         <h1 className="mb-6 self-start text-4xl uppercase md:col-start-1 md:row-start-1 md:text-[67px] md:leading-[81px] xl:text-[98px] xl:leading-[119px]  ">
           Uncover <br />

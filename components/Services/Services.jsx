@@ -1,5 +1,5 @@
-// 'use client';
 import React, { useState } from 'react';
+import { servicesList } from '@helpers/servicesList';
 import Image from 'next/image';
 import { EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,18 +9,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
-import { servicesList } from './helpers/servicesList';
 import ServiceCard from './ServiceCard';
 
 import 'swiper/css';
-import './swiper.css';
+import '@styles/swiper.css';
 
 function Services() {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [activeServiceIndex, setActiveServiceIndex] = useState(0);
   const [currentMenuIndex, setCurrentMenuIndex] = useState(0);
 
   const handlePaginationClick = (index) => {
     if (swiperInstance) {
+      setActiveServiceIndex(index);
       swiperInstance.slideTo(index);
       setCurrentMenuIndex(index);
     }
@@ -29,8 +30,8 @@ function Services() {
   return (
     <section
       id="services"
-      className="relative py-[56px] md:py-[64px] xl:py-[104px] text-sm md:text-base xl:text-lg md:leading-5 xl:leading-6 service">
-      <div className="relative container mx-auto px-5 md:px-8 xl:px-6 flex flex-col  ">
+      className="service relative text-sm   md:text-base  md:leading-5  xl:text-lg xl:leading-6">
+      <div>
         <div>
           <Swiper
             effect="fade"
@@ -45,20 +46,22 @@ function Services() {
                   service={service}
                   serviceIndex={serviceIndex}
                   total={servicesList.length}
+                  activeServiceIndex={activeServiceIndex}
                   handlePaginationClick={handlePaginationClick}
+                  currentMenuIndex={currentMenuIndex}
                 />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-      <Image
+      {/* <Image
         src={`/images${servicesList[currentMenuIndex].imageBG}`}
         fill
         sizes="100vw"
-        alt="service.title"
+        alt={servicesList[currentMenuIndex].title}
         className=" object-cover object-center "
-      />
+      /> */}
     </section>
   );
 }
