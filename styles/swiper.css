@@ -5,8 +5,11 @@
   }
 }
 
-.gallerySwiper .swiper-slide {
+.swiper-slide {
   height: auto;
+  cursor: pointer;
+}
+.gallerySwiper .swiper-slide {
   width: 415px;
   display: flex;
   align-items: center;

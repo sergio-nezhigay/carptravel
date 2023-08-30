@@ -6,8 +6,8 @@ function Contacts() {
   return (
     <section
       id="contacts"
-      className=" contacts py-[56px] text-sm md:py-[64px] md:text-base md:leading-5 xl:py-[104px] xl:text-lg xl:leading-6">
-      <div className="container relative  md:flex md:h-full md:flex-col md:justify-between">
+      className="contacts py-[56px] text-sm md:py-[64px] md:text-base md:leading-5 xl:py-[104px] xl:text-lg xl:leading-6">
+      <div className="container relative z-10 md:flex md:h-full md:flex-col md:justify-between">
         <h2 className="mb-9 text-4xl uppercase  md:col-start-1 md:row-start-1 md:self-start  md:text-[67px] md:leading-[66px] xl:mb-[71px] xl:text-[98px] xl:leading-[119px]">
           <span className="font-thin">Contact </span>US
         </h2>

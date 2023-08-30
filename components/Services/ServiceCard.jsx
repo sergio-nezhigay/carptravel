@@ -13,9 +13,9 @@ function ServiceCard({
 }) {
   return (
     <>
-      <div className="container flex flex-col py-[56px] md:py-[64px] xl:py-[104px] ">
+      <div className="container relative z-10 flex flex-col py-[56px] md:py-[64px] xl:py-[104px] ">
         <div className="md:mb-[36px] md:flex md:items-center md:justify-between xl:mb-[23px] ">
-          <h2 className="relative z-10 mb-6 text-4xl uppercase  md:col-start-1 md:row-start-1 md:mb-0  md:self-start md:text-[67px] md:leading-[81px] xl:flex-1 xl:text-[98px] xl:leading-[119px]">
+          <h2 className=" mb-6 text-4xl uppercase  md:col-start-1 md:row-start-1 md:mb-0  md:self-start md:text-[67px] md:leading-[81px] xl:flex-1 xl:text-[98px] xl:leading-[119px]">
             <span className="font-thin">We </span>Offer
           </h2>
           <div className="mb-4 text-right text-[43px] font-thin leading-[52px] md:mb-0 md:text-[67px] md:leading-[68px] xl:flex-1 xl:text-left xl:text-[98px] xl:leading-[119px] ">

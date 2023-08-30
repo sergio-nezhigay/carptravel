@@ -77,7 +77,7 @@
       );
   }
   .hero {
-    @apply hero-bg-mob bg-cover bg-center md:hero-bg-tab xl:hero-bg-desk relative bg-[#D9D9D9];
+    @apply hero-bg-mob md:hero-bg-tab xl:hero-bg-desk relative bg-[#D9D9D9] bg-cover bg-center;
   }
   .hero::after {
     content: '';
@@ -125,7 +125,7 @@
   }
 
   .about {
-    @apply about-bg-mob bg-cover bg-center md:about-bg-tab xl:about-bg-desk relative bg-[#D9D9D9];
+    @apply about-bg-mob md:about-bg-tab xl:about-bg-desk relative bg-[#D9D9D9] bg-cover bg-center;
   }
   .about::after {
     content: '';
@@ -173,7 +173,7 @@
   }
 
   .gallery {
-    @apply gallery-bg-mob bg-cover bg-center md:gallery-bg-tab xl:gallery-bg-desk relative bg-[#0A1813];
+    @apply gallery-bg-mob md:gallery-bg-tab xl:gallery-bg-desk relative bg-[#0A1813] bg-cover bg-center;
   }
   .gallery::after {
     content: '';
@@ -233,7 +233,7 @@
   }
 
   .contacts {
-    @apply contacts-bg-mob bg-cover bg-center md:contacts-bg-tab xl:contacts-bg-desk relative bg-[#0A1813];
+    @apply contacts-bg-mob md:contacts-bg-tab xl:contacts-bg-desk relative bg-[#0A1813] bg-cover bg-center;
   }
   .contacts::after {
     content: '';

@@ -15,8 +15,8 @@ function Gallery() {
     <section
       id="gallery"
       className="gallery py-[56px] text-sm md:py-[64px] md:text-base md:leading-5 xl:py-[104px] xl:text-lg xl:leading-6">
-      <div className="container relative md:flex md:h-full md:flex-col md:justify-between ">
-        <h2 className="relative z-10 mb-6 text-4xl uppercase  md:col-start-1 md:row-start-1 md:mb-[75px]  md:self-start md:text-[67px] md:leading-[81px] xl:mb-[28px] xl:text-[98px] xl:leading-[119px]">
+      <div className="container relative z-10  md:flex md:h-full md:flex-col md:justify-between ">
+        <h2 className="relative mb-6 text-4xl uppercase  md:col-start-1 md:row-start-1 md:mb-[75px]  md:self-start md:text-[67px] md:leading-[81px] xl:mb-[28px] xl:text-[98px] xl:leading-[119px]">
           <span className="font-thin">Our </span>Gallery
         </h2>
         <ul className="block md:hidden ">
