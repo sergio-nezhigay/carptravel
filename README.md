@@ -57,6 +57,10 @@ Here is a simple flow chart:
 ```mermaid
 graph LR
 
+  %% Хедер і футер
+  style B fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
+  style L fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
+
   %% Секції
   style A fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
   style C fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
@@ -67,20 +71,12 @@ graph LR
   style H fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
   style I fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
 
-  %% Хедер і футер
-  style B fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
-  style L fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
-
   %% Сторінки
   style N fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style O fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style P fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style R fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style S fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
-
-  %% Лого і навігаційне меню
-  style J fill:#F0F0F0, stroke:#A6A6A6, stroke-width:2px;
-  style K fill:#F0F0F0, stroke:#A6A6A6, stroke-width:2px;
 
   A[Головна сторінка] --> B[Header]
   A --> C[Секція 1. Hero]
@@ -97,5 +93,6 @@ graph LR
 
   I --> R[Контактні дані]
   I --> S[Форма зворотнього зв'язку]
+
 
 ```
