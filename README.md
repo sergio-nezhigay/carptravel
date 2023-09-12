@@ -33,10 +33,6 @@
 
 **Front-end:**
 
-Sure, here's your front-end tech stack with improved formatting:
-
-**Front-end:**
-
 - Next.js
 - CSS framework: Tailwind 🎨
 - Form handling: 📝 `@formspree/react`
@@ -107,8 +103,6 @@ graph LR
 ## 📞 Контакти
 
 Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову інформацію:
-
-Certainly! Here's the contact information with improved formatting:
 
 📱 **Телефон:** +380979769625
 
