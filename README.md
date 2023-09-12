@@ -55,30 +55,22 @@
 Here is a simple flow chart:
 
 ```mermaid
-graph TD;
-    Начало --> Сайт_бізнес-коуча_IM_Consulting
-    Сайт_бізнес-коуча_IM_Consulting --> Header
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_1_Головна_Hero
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_2_Цінності_та_принципи
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_3_Послуги
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_4_Процеси
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_5_Партнери
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_6_Відгуки
-    Сайт_бізнес-коуча_IM_Consulting --> Секція_7_Контакти
-    Сайт_бізнес-коуча_IM_Consulting --> Footer
-    Header --> Лого
-    Header --> Навігаційне_меню
-    Секція_1_Головна_Hero --> Фото
-    Секція_1_Головна_Hero --> Опис_Hero
-    Секція_2_Цінності_та_принципи --> Опис_цінностей
-    Секція_3_Послуги --> Сторінка_Навчання
-    Секція_3_Послуги --> Сторінка_Консалтинг
-    Секція_3_Послуги --> Сторінка_Коучінг
-    Секція_4_Процеси --> Опис_процесів
-    Секція_5_Партнери --> Перелік_партнерів-лого
-    Секція_6_Відгуки --> Список_відгуків
-    Секція_7_Контакти --> Контактні_дані
-    Секція_7_Контакти --> Форма_зворотнього_зв'язку
-    Footer --> Лого_copyright
+graph LR
+  A[Home Page] --> B[About Mermaids]
+  A --> C[Mermaid Stories]
+  A --> D[Mermaid Gallery]
+  A --> E[Mermaid Lifestyle]
+  A --> F[Mermaid Conservation]
+  A --> G[Mermaid Products]
+  B --> H[Mermaid Folklore]
+  B --> I[Mermaid Legends]
+  C --> J[Fictional Stories]
+  C --> K[Real-Life Encounters]
+  D --> L[Mermaid Art]
+  D --> M[User-Submitted Art]
+  E --> N[Fashion Tips]
+  E --> O[DIY Projects]
+  F --> P[Marine Conservation]
+  G --> Q[Merchandise]
 
 ```
