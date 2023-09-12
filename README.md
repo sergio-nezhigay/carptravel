@@ -104,12 +104,15 @@ graph LR
 Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову
 інформацію:
 
-🌐 **Веб-сайт:** https://softryzen.com/
+🌐 **Веб-сайт:** 
+[![Contact](./public/images/omg-hero.jpg)](https://softryzen.com/)
 
 📱 **Телефон:** +380979769625
 
 📧 **Email:** [services@softryzen.com](mailto:services@softryzen.com)
 
 💬 **Telegram:** [https://t.me/maksym_kozlov](https://t.me/maksym_kozlov)
+
+🎥 **YouTube канал:** [https://www.youtube.com](https://www.youtube.com/watch?v=_X7NLwgdfgI)
 
 Дякуємо за вашу увагу! 🙌
