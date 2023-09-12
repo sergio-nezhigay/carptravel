@@ -56,7 +56,6 @@ Here is a simple flow chart:
 
 ```mermaid
 graph LR
-graph LR
   A[Головна сторінка] --> B[Header]
   A --> C[Секція 1. Hero]
   A --> D[Секція 2. Цінності та принципи]
