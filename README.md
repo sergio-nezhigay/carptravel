@@ -55,7 +55,33 @@
 Here is a simple flow chart:
 
 ```mermaid
-graph LR
+graph TD
+
+  %% Секції
+  style A fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style C fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style D fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style E fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style F fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style G fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style H fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+  style I fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
+
+  %% Хедер і футер
+  style B fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
+  style L fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
+
+  %% Сторінки
+  style N fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+  style O fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+  style P fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+  style R fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+  style S fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+
+  %% Лого і навігаційне меню
+  style J fill:#F0F0F0, stroke:#A6A6A6, stroke-width:2px;
+  style K fill:#F0F0F0, stroke:#A6A6A6, stroke-width:2px;
+
   A[Головна сторінка] --> B[Header]
   A --> C[Секція 1. Hero]
   A --> D[Секція 2. Цінності та принципи]
@@ -63,31 +89,17 @@ graph LR
   A --> F[Секція 4. Процеси]
   A --> G[Секція 5. Партнери]
   A --> H[Секція 6. Відгуки]
-  A --> I[Секція 5. Контакти]
-  A --> L[Секція 6. Футер]
+  A --> I[Секція 7. Контакти]
+  A --> L[Footer]
+
   B --> J[Logo]
   B --> K[Навігаційне Меню]
+
   E --> N[Сторінка навчання]
   E --> O[Сторінка консалтінг]
   E --> P[Сторінка коучінг]
+
   I --> R[Контактні дані]
   I --> S[Форма зворотнього зв'язку]
-
-  style B fill:#c2e3f7,stroke:#036;
-  style C fill:#b8daff,stroke:#036;
-  style D fill:#b8daff,stroke:#036;
-  style E fill:#b8daff,stroke:#036;
-  style F fill:#b8daff,stroke:#036;
-  style G fill:#b8daff,stroke:#036;
-  style H fill:#b8daff,stroke:#036;
-  style I fill:#b8daff,stroke:#036;
-  style L fill:#c2e3f7,stroke:#036;
-  style J fill:#ffd700,stroke:#036;
-  style K fill:#ffd700,stroke:#036;
-  style N fill:#fff,stroke:#036;
-  style O fill:#fff,stroke:#036;
-  style P fill:#fff,stroke:#036;
-  style R fill:#fff,stroke:#036;
-  style S fill:#fff,stroke:#036;
 
 ```
