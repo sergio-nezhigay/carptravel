@@ -106,7 +106,7 @@ graph LR
 
 [![Contact](./public/images/readme-icon.png)](https://softryzen.com/) **Веб-сайт:** [softryzen.com](https://softryzen.com/)
 
-📱 **Телефон:** <a href="tel:+380979769625">+380979769625</a>
+📱 **Телефон:** <a href="tel:+38097976962500">+38097976962500</a>
 
 📧 **Email:** [services@softryzen.com](mailto:services@softryzen.com)
 
