@@ -53,23 +53,36 @@ graph LR
 
   %% Хедер
   style B fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  classDef BClass fill:#438b4e, stroke:#ffffff, stroke-width:2px, shape:rect;
 
   %% Секції
   style C fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef CClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:circle;
   style D fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef DClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:diamond;
   style E fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef EClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:round-edge;
   style F fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef FClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:hexagon;
   style G fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef GClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:trapezoid;
   style H fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef HClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:parallelogram;
   style I fill:#777, stroke:#ff9300, stroke-width:2px;
+  classDef IClass fill:#777, stroke:#ff9300, stroke-width:2px, shape:ellipse;
 
   %% Сторінки
   style N fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  classDef NClass fill:#438b4e, stroke:#ffffff, stroke-width:2px, shape:rect;
   style O fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  classDef OClass fill:#438b4e, stroke:#ffffff, stroke-width:2px, shape:round-edge;
   style P fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  classDef PClass fill:#438b4e, stroke:#ffffff, stroke-width:2px, shape:ellipse;
 
   %% Футер
   style J fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  classDef JClass fill:#438b4e, stroke:#ffffff, stroke-width:2px, shape:trapezoid;
+
 
   Z[Вхід] --> A[Головна сторінка]
   A --> B[Header]
