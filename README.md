@@ -78,7 +78,8 @@ graph LR
   style R fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style S fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
 
-  A[Головна сторінка] --> B[Header]
+  Z[Головна сторінка] --> A[Вхід]
+  A --> B[Header]
   A --> C[Секція 1. Hero]
   A --> D[Секція 2. Цінності та принципи]
   A --> E[Секція 3. Послуги]
