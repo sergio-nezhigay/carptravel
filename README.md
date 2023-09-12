@@ -33,22 +33,21 @@
 
 **Front-end:**
 
-- Next.js
+- Next.js ⏭️
 - CSS framework: Tailwind 🎨
-- Form handling: 📝 `@formspree/react`
-- Form validation: ✅ `@hookform/resolvers`
-- CSS autoprefixing: 🔄 `autoprefixer`
 - Environment variables: 🔐 `dotenv`
 - Code quality and style: 🧹 `eslint`
-- ESLint configuration for Next.js: 🚀 `eslint-config-next`
 - React library: ⚛️ `react`
-- React DOM: 🏛️ `react-dom`
 - Form handling with React: 📝 `react-hook-form`
 - Scrolling functionality: 📜 `react-scroll`
 - Notification component: 📢 `react-toastify`
 - Carousel component: 🎠 `swiper`
-- CSS framework: Tailwind 🎨
 - Form validation schema: ✅ `yup`
+- Email sending: 📧 nodemailer
+
+**Back-end:**
+
+- Json 📄
 
 ## 🌐 Доступність
 
@@ -102,7 +101,10 @@ graph LR
 
 ## 📞 Контакти
 
-Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову інформацію:
+Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову
+інформацію:
+
+🌐 **Веб-сайт:** https://softryzen.com/
 
 📱 **Телефон:** +380979769625
 
