@@ -74,13 +74,12 @@ graph LR
   style N fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style O fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style P fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
-  style R fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
-  style S fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+
 
   %% Футер
   style J fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
 
-  Z[Головна сторінка] --> A[Вхід]
+  Z[Вхід] --> A[Головна сторінка]
   A --> B[Header]
   A --> C[Секція 1. Hero]
   A --> D[Секція 2. Цінності та принципи]
