@@ -1,83 +1,66 @@
-# Carptravel Project
+# Проєкт IM CONSULTING
 
-Welcome to the Carptravel project! This is a web application built using Next.js, Tailwind CSS, and deployed on Vercel. The project aims to provide travel enthusiasts with information about various destinations for carp Travelling and fishing.
+![Зображення сайту](data:image/jpeg;base64,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)
 
-![Carptravel Screenshot](screenshot.png)
+## Опис проєкту
 
-## Table of Contents
+Сайт-візитка для створення особистого бренду та залучення нових клієнтів та партнерів.
 
-- [Demo](#demo)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
+- **Назва проєкту**: IM CONSULTING
+- **Замовник проєкту**: Ілля Мушковський, бізнес тренер, топ консультант, антикризовий менеджер, коуч.
 
-## Demo
+## Мета проєкту
 
-Check out the live demo of the Carptravel project: [https://carptravel-rouge.vercel.app/](https://carptravel-rouge.vercel.app/)
+- Створення позитивного іміджу особистого бренду.
+- Інформування клієнтів.
+- Залучення клієнтів / партнерів.
+- Отримання зворотного зв'язку від клієнтів.
 
-## Features
+## Цільова аудиторія
 
-- Browse and explore various destinations for travelling.
-- View detailed information about each destination, including photos and descriptions.
-- Responsive design for seamless usage on different devices.
-- Fast and efficient performance powered by Next.js and optimized with Tailwind CSS.
+- **Вікова категорія**: Від 20 до 65.
+- **Рівень доходів**: Середній, високий.
 
-## Getting Started
+## Обсяг продукту
 
-To get started with the project locally on your machine, follow the instructions below.
+Багатосторінковий сайт-візитка для створення позитивного іміджу особистого бренду, інформування клієнтів, залучення клієнтів / партнерів та отримання зворотного зв'язку від клієнтів.
 
-### Installation
+## Технічний стек
 
-1. **Clone the repository:**
+**Front-end:**
 
-   ```bash
-   git clone https://github.com/sergio-nezhigay/n1.git
-   ```
+- Next.js
+- CSS framework: Tailwind
 
-2. **Navigate to the project directory:**
+## Доступність
 
-   ```bash
-   cd carptravel
-   ```
+- Інтуїтивно зрозумілий дизайн.
+- Зручний для мобільних пристроїв.
+- Веб-ресурс доступний для будь-якого підключення до Інтернету.
 
-3. **Install dependencies:**
+## Безпека
 
-   ```bash
-   npm install
-   ```
+- SSL-з'єднання.
+- Відсутність публічного доступу для приватних компонентів системи.
+- Перевірка основних типів атак (sqli, xss тощо).
+- Усі паролі мають бути хешованими.
+- Доступ користувача через сесії.
 
-### Usage
+## Мови, що підтримуються
 
-1. **Run the development server:**
+- Українська
 
-   ```bash
-   npm run dev
-   ```
+## Структура сайту (Mermaid.js-based діаграма)
 
-2. **Open your browser:**
-
-   The application will be available at [http://localhost:3000](http://localhost:3000). You can start exploring the app from there.
-
-## Technologies
-
-- [Next.js](https://nextjs.org/) - React framework for building server-rendered applications.
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
-- [Vercel](https://vercel.com/) - A platform for deploying web applications.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-new-feature`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-new-feature`.
-5. Open a pull request.
-
-## License
-
-This project is [MIT licensed](LICENSE).
+```mermaid
+граф TB
+    Начало --> Головна_сторінка
+    Головна_сторінка --> Розділ_1
+    Головна_сторінка --> Розділ_2
+    Розділ_1 --> Підсторінка_1.1
+    Розділ_1 --> Підсторінка_1.2
+    Розділ_2 --> Підсторінка_2.1
+    Розділ_2 --> Підсторінка_2.2
+    Підсторінка_1.1 --> Детальна_інформація_1.1
+    Підсторінка_2.1 --> Детальна_інформація_2.1
+```
