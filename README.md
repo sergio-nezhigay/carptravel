@@ -104,8 +104,7 @@ graph LR
 Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову
 інформацію:
 
-🌐 **Веб-сайт:**
-[![Contact](./public/images/readme-icon.png)](https://softryzen.com/)
+[![Contact](./public/images/readme-icon.png)](https://softryzen.com/) **Веб-сайт:** [softryzen.com](https://softryzen.com/)
 
 📱 **Телефон:** +380979769625
 
