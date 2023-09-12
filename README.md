@@ -57,9 +57,8 @@ Here is a simple flow chart:
 ```mermaid
 graph LR
 
-  %% Хедер і футер
+  %% Хедер
   style B fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
-  style J fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
 
   %% Секції
   style A fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
@@ -77,6 +76,9 @@ graph LR
   style P fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style R fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
   style S fill:#C1E1FF, stroke:#3686E3, stroke-width:2px;
+
+  %% Футер
+  style J fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
 
   Z[Головна сторінка] --> A[Вхід]
   A --> B[Header]
