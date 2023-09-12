@@ -55,14 +55,13 @@ graph LR
   style B fill:#438b4e, stroke:#ffffff, stroke-width:2px;
 
   %% Секції
-  style A fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style C fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style D fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style E fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style F fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style G fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style H fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
-  style I fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
+  style C fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style D fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style E fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style F fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style G fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style H fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
+  style I fill:#E5D7AC, stroke:#ff9300, stroke-width:2px;
 
   %% Сторінки
   style N fill:#438b4e, stroke:#ffffff, stroke-width:2px;
