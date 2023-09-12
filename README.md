@@ -55,7 +55,7 @@
 Here is a simple flow chart:
 
 ```mermaid
-graph TD
+graph LR
 
   %% Секції
   style A fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
