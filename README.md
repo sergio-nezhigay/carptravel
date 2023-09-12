@@ -59,7 +59,7 @@ graph LR
 
   %% Хедер і футер
   style B fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
-  style L fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
+  style J fill:#D5E8D4, stroke:#5E9959, stroke-width:2px;
 
   %% Секції
   style A fill:#FFDDC1, stroke:#E3A036, stroke-width:2px;
@@ -88,7 +88,7 @@ graph LR
   A --> H[Секція 6. Відгуки]
   A --> I[Секція 7. Контакти]
   A --> J[Футер]
-    A --> H[Секція 8. footer]
+  A --> H[Секція 8. footer]
   E --> N[Сторінка навчання]
   E --> O[Сторінка консалтінг]
   E --> P[Сторінка коучінг]
