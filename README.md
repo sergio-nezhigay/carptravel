@@ -56,7 +56,8 @@ Here is a simple flow chart:
 
 ```mermaid
 graph LR
-  A[Головна] --> B[Header]
+graph LR
+  A[Головна сторінка] --> B[Header]
   A --> C[Секція 1. Hero]
   A --> D[Секція 2. Цінності та принципи]
   A --> E[Секція 3. Послуги]
@@ -73,5 +74,21 @@ graph LR
   I --> R[Контактні дані]
   I --> S[Форма зворотнього зв'язку]
 
+  style B fill:#c2e3f7,stroke:#036;
+  style C fill:#b8daff,stroke:#036;
+  style D fill:#b8daff,stroke:#036;
+  style E fill:#b8daff,stroke:#036;
+  style F fill:#b8daff,stroke:#036;
+  style G fill:#b8daff,stroke:#036;
+  style H fill:#b8daff,stroke:#036;
+  style I fill:#b8daff,stroke:#036;
+  style L fill:#c2e3f7,stroke:#036;
+  style J fill:#ffd700,stroke:#036;
+  style K fill:#ffd700,stroke:#036;
+  style N fill:#fff,stroke:#036;
+  style O fill:#fff,stroke:#036;
+  style P fill:#fff,stroke:#036;
+  style R fill:#fff,stroke:#036;
+  style S fill:#fff,stroke:#036;
 
 ```
