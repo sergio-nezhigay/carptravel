@@ -65,9 +65,9 @@ graph LR
   style I fill:#ffc04d, stroke:#ff9300, stroke-width:2px;
 
   %% Сторінки
-  style N fill:#3686e3, stroke:#ffffff, stroke-width:2px;
-  style O fill:#3686e3, stroke:#ffffff, stroke-width:2px;
-  style P fill:#3686e3, stroke:#ffffff, stroke-width:2px;
+  style N fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  style O fill:#438b4e, stroke:#ffffff, stroke-width:2px;
+  style P fill:#438b4e, stroke:#ffffff, stroke-width:2px;
 
   %% Футер
   style J fill:#438b4e, stroke:#ffffff, stroke-width:2px;
