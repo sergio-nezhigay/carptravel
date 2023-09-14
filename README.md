@@ -1,115 +1,83 @@
-# Проєкт IM CONSULTING 💼
+# Carptravel Project
 
-![Зображення сайту](./public/images/omg-hero.jpg)
+Welcome to the Carptravel project! This is a web application built using Next.js, Tailwind CSS, and deployed on Vercel. The project aims to provide travel enthusiasts with information about various destinations for carp Travelling and fishing.
 
-## 📝 Опис проєкту
+![Carptravel Screenshot](screenshot.png)
 
-Сайт-візитка для створення особистого бренду та залучення нових клієнтів та
-партнерів.
+## Table of Contents
 
-- **Назва проєкту**: IM CONSULTING
-- **Замовник проєкту**: Ілля Мушковський, бізнес тренер, топ консультант,
-  антикризовий менеджер, коуч. 🚀
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🎯 Мета проєкту
+## Demo
 
-- Створення позитивного іміджу особистого бренду.
-- Інформування клієнтів.
-- Залучення клієнтів / партнерів.
-- Отримання зворотнього зв'язку від клієнтів. 📞
+Check out the live demo of the Carptravel project: [https://carptravel-rouge.vercel.app/](https://carptravel-rouge.vercel.app/)
 
-## 👥 Цільова аудиторія
+## Features
 
-- **Вікова категорія**: Від 20 до 65.
-- **Рівень доходів**: Середній, високий. 💰
+- Browse and explore various destinations for travelling.
+- View detailed information about each destination, including photos and descriptions.
+- Responsive design for seamless usage on different devices.
+- Fast and efficient performance powered by Next.js and optimized with Tailwind CSS.
 
-## 🌐 Обсяг продукту
+## Getting Started
 
-Багатосторінковий сайт-візитка для створення позитивного іміджу особистого
-бренду, інформування клієнтів, залучення клієнтів / партнерів та отримання
-зворотнього зв'язку від клієнтів. 🌟
+To get started with the project locally on your machine, follow the instructions below.
 
-## 🛠️ Технічний стек
+### Installation
 
-**Front-end:**
+1. **Clone the repository:**
 
-- Next.js ⏭️
-- CSS framework: Tailwind 🎨
-- Environment variables: 🔐 `dotenv`
-- Code quality and style: 🧹 `eslint`
-- React library: ⚛️ `react`
-- Form handling with React: 📝 `react-hook-form`
-- Scrolling functionality: 📜 `react-scroll`
-- Notification component: 📢 `react-toastify`
-- Carousel component: 🎠 `swiper`
-- Form validation schema: ✅ `yup`
-- Email sending: 📧 nodemailer
+   ```bash
+   git clone https://github.com/sergio-nezhigay/n1.git
+   ```
 
-**Back-end:**
+2. **Navigate to the project directory:**
 
-- Json 📄
+   ```bash
+   cd carptravel
+   ```
 
-## 🌐 Доступність
+3. **Install dependencies:**
 
-- Інтуїтивно зрозумілий дизайн.
-- Зручний для мобільних пристроїв.
-- Веб-ресурс доступний для будь-якого підключення до Інтернету. 📱🌐
+   ```bash
+   npm install
+   ```
 
-## 🗣️ Мови, що підтримуються
+### Usage
 
-- Українська 🇺🇦
+1. **Run the development server:**
 
-## 📊 Структура сайту
+   ```bash
+   npm run dev
+   ```
 
-```mermaid
-graph LR
+2. **Open your browser:**
 
-  Z{Вхід} --> A((Головна сторінка))
-  A --> B[Header]
-  A --> C[Секція 1. Hero]
-  A --> D[Секція 2. Цінності та принципи]
-  A --> E[Секція 3. Послуги]
-  A --> F[Секція 4. Процеси]
-  A --> G[Секція 5. Партнери]
-  A --> H[Секція 6. Відгуки]
-  A --> I[Секція 7. Контакти]
-  A --> J[Футер]
-  E --> N((Сторінка навчання))
-  E --> O((Сторінка консалтінг))
-  E --> P((Сторінка коучінг))
-```
+   The application will be available at [http://localhost:3000](http://localhost:3000). You can start exploring the app from there.
 
-## 🚀 Розгортання (Deploying)
+## Technologies
 
-Для розгортання цього проєкту вам потрібно виконати наступні кроки:
+- [Next.js](https://nextjs.org/) - React framework for building server-rendered applications.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- [Vercel](https://vercel.com/) - A platform for deploying web applications.
 
-1. Клонуйте репозиторій: Використовуйте команду `git clone` для клонування цього
-   репозиторію на ваш комп'ютер.
+## Contributing
 
-2. Встановіть залежності: Відкрийте термінал у кореневій папці проєкту та
-   виконайте команду `npm install` або `yarn install`, щоб встановити всі
-   необхідні залежності.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-3. Налаштування змінних середовища: Створіть файл `.env.local` у кореневій папці
-   та додайте необхідні змінні середовища, які вам потрібні для проєкту.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature-new-feature`.
+5. Open a pull request.
 
-4. Запустіть додаток: Виконайте команду `npm run dev` або `yarn dev`, щоб
-   запустити проєкт на локальному сервері.
+## License
 
-5. Розгортання: Щоб розгорнути цей проєкт на продакшн-сервері, скористайтеся
-   платформами для хостингу, такими як Vercel, Netlify, або інші. 🌐
-
-## 📞 Контакти
-
-Компанія SoftRyzen готова відповісти на ваші запитання і надати додаткову
-інформацію:
-
-[![Contact](./public/images/readme-icon.png)](https://softryzen.com/) **Веб-сайт:** [softryzen.com](https://softryzen.com/)
-
-📱 **Телефон:** <a href="tel:+38097976962500">+38097976962500</a>
-
-📧 **Email:** [services@softryzen.com](mailto:services@softryzen.com)
-
-🎥 **YouTube канал:** [https://www.youtube.com](https://www.youtube.com/watch?v=_X7NLwgdfgI)
-
-## Дякуємо за вашу увагу! 🙌
+This project is [MIT licensed](LICENSE).
