@@ -50,7 +50,13 @@
 
 @layer components {
   .hero-bg-mob {
-    background-image: url(/images/hero-bg-320.jpg);
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/images/hero-bg-320.jpg);
+    background-image:
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      -webkit-image-set(url(/images/hero-bg-320.webp) type('image/webp') 1x, url(/images/hero-bg-320@2x.webp)
+            type('image/webp') 2x, url(/images/hero-bg-320.jpg) 1x, url(/images/hero-bg-320@2x.jpg)
+            2x);
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       image-set(
         url(/images/hero-bg-320.webp) type('image/webp') 1x,
@@ -60,7 +66,13 @@
       );
   }
   .hero-bg-tab {
-    background-image: url(/images/hero-bg-320.jpg);
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/images/hero-bg-768.jpg);
+    background-image:
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      -webkit-image-set(url(/images/hero-bg-768.webp) type('image/webp') 1x, url(/images/hero-bg-768@2x.webp)
+            type('image/webp') 2x, url(/images/hero-bg-768.jpg) 1x, url(/images/hero-bg-768@2x.jpg)
+            2x);
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       image-set(
         url(/images/hero-bg-768.webp) type('image/webp') 1x,
@@ -70,7 +82,13 @@
       );
   }
   .hero-bg-desk {
-    background-image: url(/images/hero-bg-320.jpg);
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/images/hero-bg-1280.jpg);
+    background-image:
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      -webkit-image-set(url(/images/hero-bg-1280.webp) type('image/webp') 1x, url(/images/hero-bg-1280@2x.webp)
+            type('image/webp') 2x, url(/images/hero-bg-1280.jpg) 1x, url(/images/hero-bg-1280@2x.jpg)
+            2x);
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       image-set(
         url(/images/hero-bg-1280.webp) type('image/webp') 1x,
