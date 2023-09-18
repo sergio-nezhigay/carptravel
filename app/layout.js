@@ -21,7 +21,7 @@ export const metadata = {
     title: 'Best travel site',
     description:
       'We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
-    url: process.env.BASE_URL,
+    url: '/',
     siteName: 'CarpTravel',
     images: [
       {
@@ -33,6 +33,7 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  // metadataBase: new URL('https://acme.com'),
   robots: {
     index: false,
     follow: true,
