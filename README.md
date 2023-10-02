@@ -2,7 +2,7 @@
 
 Welcome to the Carptravel project! This is a web application built using Next.js, Tailwind CSS, and deployed on Vercel. The project aims to provide travel enthusiasts with information about various destinations for carp Travelling and fishing.
 
-![site screenshot](./opengraph-image.jpg)
+![site screenshot](./public/meta/opengraph-image.jpg)
 
 ## Table of Contents
 
